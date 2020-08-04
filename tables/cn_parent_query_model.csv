@@ -1,0 +1,89 @@
+,,
+ocid,,string
+A globally unique identifier for this Contracting Process,,
+id,,string
+An identifier for this particular release of information for CP,,
+date,,date-time
+The date this information is released,,
+tag,,string
+A value from the releaseTag codelist that identifies the nature of the release being made,,
+initiationType,,string
+"String specifying the type of initiation process used for this contract, taken from the initiationType codelist",,
+planning.rationale,,string
+The rationale for the procurement provided in free text.,,
+planning.budget.description,,string
+A short free text description of the budget source,,
+planning.budget.amount,,object
+"Object described the sum of funds specified by CA this CP 
+See Value",,
+planning.budget.isEuropeanUnionFunded,,boolean
+True/False field to indicate whether this procurement is related to a project and/or programme financed by EU,,
+planning.budget.budget Breakdown,array,object
+"Detailed budget breakdown to be expressed, covering multiple budget sources and multiple periods
+See BudgetBreakdown",,
+tender.id,,string
+An identifier for this CP,,
+tender.title,,string
+Title for this CP,,
+tender.description,,string
+Description for this CP,,
+tender.classification,,object
+"The primary classification for the tender. Uses CPV Codelist 
+See Classification",,
+tender.status,,string
+The current status of the CP based on the tenderStatus codelist,,
+tender.statusDetails,,string
+The current status of the CP based on the tenderStatusDetails codelist,,
+tender.value,,object
+"The total upper estimated value of this CP
+See Value",,
+tender.procurementMethod,,string
+Specify tendering method against the procurementMethods codelist,,
+tender.procurementMethodDetails,,string
+Additional detail on the procurement method used.,,
+tender.procurementMethodRationale,,string
+Rationale of procurement method,,
+tender.procurementMethodAdditionalInfo,,string
+Additional information about the procurement method,,
+tender.mainProcurementCategory,,string
+The primary category describing the object of this contracting process from the procurementCategory codelist,,
+tender.additionalProcurementCategories,,string
+"Additional categories which describe the subject of this CP, from the extendedProcurementCategory codelist",,
+tender.hasEnquiries,,boolean
+A true/false field to indicate whether any enquiries were received during the tender process,,
+tender.eligibilityCriteria,,string
+A description of any eligibility criteria for potential suppliers.,,
+tender.submissionLanguages,array,string
+"Language(s) in which tenderers may submit, drawn from the submissionLanguages codelist",,
+tender.contractPeriod,,object
+"The period over which the contract is estimated or required to be active
+See Period",,
+tender.acceleratedProcedure.isAcceleratedProcedure,,boolean
+A True/False field to indicate whether an accelerated procedure has been used for this procurement,,
+tender.designContest.serviceContractAward,,boolean
+A True/False field to indicate whether a service contract will be awarded to the winner(s) of the design contest.,,
+tender.electronicWorkflows.useOrdering,,boolean
+A True/False field to indicate if electronic ordering will be used.,,
+tender.electronicWorkflows.usePayment,,boolean
+A True/False field to indicate if electronic payment will be used.,,
+tender.electronicWorkflows.acceptInvoicing,,boolean
+A True/False field to indicate if electronic invoicing will be accepted.,,
+tender.jointProcurement.isJointProcurement,,boolean
+A True/False field to indicate if this is a joint procurement or not.,,
+tender.procedureOutsourcing.procedureOutsourced,,boolean
+A True/False field to indicate whether the procurement procedure has been outsourced,,
+tender.framework.isAFramework,,boolean
+A True/False field to indicate whether a framework agreement has been established as part of this procurement,,
+tender.hasDynamicPurchasingSystem,,boolean
+A True/False field to indicate whether a Dynamic Purchasing System has been set up.,,
+tender.legalBasis,,string
+The legal basis of the tender based on the legalBasis codelist,,
+tender.procuringEntity,,object
+"Link to the Organization operating this Process including a set of evaluation panel if declared by PE 
+See OrganizationReference",,
+relatedProcesses,array,object
+"Objects described information about related funding (FSs), EI and other related sub-processes
+See RelatedProcess",,
+parties,array,object
+"Object described information about Entities involved into this CP 
+See Organization",,
